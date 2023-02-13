@@ -11,7 +11,10 @@ function Main() {
     return (
         <div className="main" key={vidurl}>
             <div className='playdiv'>
-                <ReactPlayer width={"100%"} height= {'100%'} className="player" controls playing loop muted url={vidurl} />
+                
+                <video width={"100%"} height={"100%"} className="player" controls muted autoPlay>
+                    <source src={vidurl} />
+                </video>
             </div>
             <div className={!subbtnclicked ? 'options' : 'options2'}>
                 {!btnclicked && (<div className='optiondiv'>
