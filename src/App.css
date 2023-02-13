@@ -1,0 +1,187 @@
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f5f5f5;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #999;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+  body {
+    margin: 0;
+  }
+  .main{
+    display: flex;
+  }
+
+  .playdiv{
+    width: 50%;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .options{
+    display: flex;
+    width: 50%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+
+  .optiondiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .optiondiv button {
+    height: 70px;
+    width: 40%;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: left;
+    font-size: large;
+  }
+
+  .optiondiv button:hover {
+    border: 2px solid purple;
+  }
+
+  .form {
+    display: flex;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formdata {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formdata input, .formdata button, .formdata div {
+    width: 90%;
+  }
+
+  .formdata p {
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  .formdata input {
+    height: 40px;
+    margin-bottom: 20px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+  }
+
+  .formdata label {
+    color: gray;
+  }
+
+  .formdata button {
+    height: 70px;
+    margin-top: 50px;
+    background-color: purple;
+    color: white;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+  }
+
+  .formdata button:hover {
+    height: 73px;
+    width: 91%;
+  }
+
+  .formdata div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+@media screen and (max-width: 1000px) {
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .playdiv {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .options{
+    position: absolute;
+    z-index: 2;
+    min-height: auto;
+  }
+
+  .options2  {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .optiondiv{
+    width: 100%;
+  }
+
+  .optiondiv button{
+    height: 50px;
+    width: 90%;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    opacity: 0.7;
+  }
+
+  .form {
+    background-color: white;
+  }
+
+  .formdata button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+
