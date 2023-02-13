@@ -11,7 +11,7 @@ function Main() {
         <div className="main" key={vidurl}>
             <div className='playdiv'>
                 
-                <video width={"100%"} height={"100%"} className="player" controls muted autoPlay>
+                <video width={"100%"} height={"100%"} className="player" controls muted autoPlay loop>
                     <source src={vidurl} />
                 </video>
             </div>
