@@ -2,3 +2,4 @@ Thank you for visiting this project. This project is a part of selection process
 
 Please find below the deployed link to the project:
 
+https://interactly-project.netlify.app/
