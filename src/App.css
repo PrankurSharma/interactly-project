@@ -38,6 +38,7 @@
 
   .player {
     position: absolute;
+    object-fit: fill;
     top: 0;
     left: 0;
   }
